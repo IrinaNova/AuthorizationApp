@@ -268,6 +268,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="About me" id="Izt-9I-W62"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="URr-Lm-e1R" id="wNf-RR-xcz"/>
+                        <outlet property="cityLabel" destination="5BY-8Q-QnO" id="7Bw-Nt-Swh"/>
+                        <outlet property="countryLabel" destination="99A-j7-Pm0" id="bSa-9D-hlO"/>
+                        <outlet property="firstNameLabel" destination="ztF-qc-UUi" id="zvs-Fi-e38"/>
+                        <outlet property="lastNameLabel" destination="Kud-5t-b8k" id="yrF-4V-m0m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JXs-eQ-6d6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -344,6 +351,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.91591566800000002" green="0.51380368279999999" blue="0.86819964569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="eHu-Kg-mPs" kind="relationship" relationship="viewControllers" id="e2y-Rf-G5C"/>

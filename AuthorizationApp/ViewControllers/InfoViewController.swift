@@ -9,15 +9,20 @@ import UIKit
 
 class InfoViewController: UIViewController {
     
+    @IBOutlet var firstNameLabel: UILabel!
+    @IBOutlet var lastNameLabel: UILabel!
+    @IBOutlet var countryLabel: UILabel!
+    @IBOutlet var cityLabel: UILabel!
+    @IBOutlet var ageLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //firstNameLabel.text = "Irina"
-       // lastNameLabel.text = "Baranova"
-        //countryLabel.text = "Belarus"
-        //cityLabel.text = "Vitebsk"
-        //ageLabel.text = "35"
-
+        firstNameLabel.text = person.firstName
+        lastNameLabel.text = person.lastName
+        countryLabel.text = person.country
+        cityLabel.text = person.city
+        ageLabel.text = person.age
+        
     }
 
 }

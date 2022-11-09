@@ -12,7 +12,7 @@ class HobbiesViewController: UIViewController {
     @IBOutlet var hobbiesLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        hobbiesLabel.text = person.hobbies
     }
 
 }

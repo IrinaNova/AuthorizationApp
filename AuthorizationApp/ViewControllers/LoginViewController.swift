@@ -14,10 +14,6 @@ class LoginViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-   
-   private let userNameValue = "1"
-   private let passwordValue = "1"
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarVC = segue.destination as? UITabBarController else {return}
         guard let viewControllers  = tabBarVC.viewControllers else {return}
@@ -41,7 +37,7 @@ class LoginViewController: UIViewController {
     // MARK: - IB Actions
     
     @IBAction func logInButtonTapped() {
-        guard userNameTF.text == userNameValue, passwordTF.text == passwordValue else {
+        guard userNameTF.text == user.userName, passwordTF.text == user.password else {
             showAlert(title: "Invalid login or password",
                       message: "Please, enter correct login and passsword")
             passwordTF.text = ""
